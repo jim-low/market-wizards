@@ -1,0 +1,306 @@
+.tick
+{
+    color: limegreen;
+    font-weight: bolder;
+    font-size: 1.25rem;
+}
+
+.cross {
+    color: firebrick;
+    font-weight: bolder;
+    font-size: 1.25rem;
+}
+
+.content
+{
+    display: flex;
+    width: 90%;
+    margin-bottom: 7rem;
+    margin: 0 auto 7rem auto;
+}
+
+#compare
+{
+    width: 50%;
+    height: 100%;
+}
+
+table
+{
+    width: 90%;
+    border-collapse: collapse;
+    border: 3px solid black;
+    color:whitesmoke;
+    text-shadow: 3px 1px #000;
+    margin: 0 auto;
+}
+
+caption
+{
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1.25px;
+    border: 3px solid #000;
+    background-color: grey;
+}
+
+thead td:nth-child(2),thead td:nth-child(3),
+tbody td:nth-child(2),tbody td:nth-child(3)
+{
+    text-align: center;
+}
+
+thead td:nth-child(2)
+{
+    padding: 0 1rem;
+}
+
+thead td{
+    font-size: 2.25rem;
+    height: 5rem;
+    background-color: rgb(217, 43, 223);
+}
+
+tbody td{
+    font-size: 1.5rem;
+    height: 1.95em;
+}
+
+td
+{
+    border:2px solid #000;
+}
+
+tr:nth-of-type(even)
+{
+    background-color: violet;
+}
+
+tr:nth-of-type(odd)
+{
+    background-color: rgb(175, 22, 175);
+}
+
+/*Form*/
+#member-form
+{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    border-radius: 15px;
+    
+}
+
+#member-form #form {
+    width: 90%;
+    height: 22.78rem;
+    text-align: left;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgb(206, 19, 209);
+    border: 3px solid #000;
+}
+
+.mem_form
+{
+    width: 90%;
+    height: 5.25rem;
+    border: 3px solid #000;
+    background-color: grey;
+    margin: 0 auto;
+    text-transform: uppercase;
+    letter-spacing: 1.25px;
+    text-shadow: 3px 1px #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputs
+{
+    font-size: 20px;
+    text-shadow: 3px 1px #000;
+}
+
+.type-input
+{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.name-input
+{
+    padding-left: 68px;
+    margin-bottom: 20px;
+}
+
+#uname
+{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    background-color: rgb(253, 237, 4);
+    outline: none;
+}
+
+.email-input
+{
+    padding-left: 65px;
+    margin-bottom: 20px;
+}
+
+#email
+{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    background-color: rgb(253, 237, 4);
+    outline: none;
+}
+
+.address-input
+{
+    padding-left: 46px;
+    margin-bottom: 20px;
+}
+
+#add
+{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    background-color: rgb(253, 237, 4);
+    outline: none;
+    resize: none;
+}
+
+.occupation-input
+{
+    padding-left: 17px;
+}
+
+#occupation
+{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    background-color: rgb(253, 237, 4);
+    outline: none;
+}
+
+#member-form
+{
+    font-size: 20px;
+    font-weight: bold;
+    color: whitesmoke;
+    text-shadow: 2px 1px grey;
+}
+
+.form-btns
+{
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+.submit
+{
+    font-size: 19px;
+    font-weight: bold;
+    padding: 7px 20px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    box-shadow: 1px 1px black;
+    background-color: rgb(43, 161, 207);
+}
+
+.reset
+{
+    font-size: 19px;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    box-shadow: 1px 1px black;
+    background-color: rgb(43, 161, 207);
+}
+
+.submit:hover
+{
+    background-color: tomato;
+}
+
+.reset:hover
+{
+    background-color: tomato;
+}
+@media only screen and (max-width: 768px)
+{
+    .content{
+        flex-direction: column;
+        margin: 15rem auto 5rem auto;
+    }
+
+    #compare {
+        width: 100%;
+        margin-bottom: 2.5rem;
+    }
+
+    table {
+        width: 95%;
+    }
+
+    #member-form {
+        width: 100%;
+    }
+
+    .mem_form {
+        width: 95%;
+    }
+
+    #member-form #form {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .content {
+        height: auto;
+        width: 100%;
+    }
+
+    #compare {
+        width: 100%;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    table h1 {
+        font-size: 2rem;
+    }
+
+    thead td {
+        font-size: 1.75rem;
+    }
+
+    #member-form,
+    #member-form #form,
+    .mem_form {
+        width: 100%;
+    }
+
+    .mem_form {
+        font-size: 1.75rem;
+    }
+ 
+}

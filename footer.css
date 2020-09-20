@@ -1,0 +1,76 @@
+footer {
+    display: flex;
+    justify-content: space-around;
+    height: 42.5vh;
+    border: thin solid black;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+footer h3 {
+    border-bottom: 2px solid rgba(255, 255, 255,0.7);
+}
+
+footer .company,
+footer .certificates,
+footer .contacts,
+footer .links {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+footer .company,
+footer .certificates,
+footer .contacts h3 {
+    text-transform: capitalize;
+}
+
+footer .links a {
+    margin-bottom: 10px;
+}
+
+footer .links a:nth-of-type(even) {
+    color: rgba(13, 185, 238, 0.8);
+}
+
+footer .links a:nth-of-type(odd) {
+    color: rgba(13, 73, 238, 0.8);
+}
+
+footer .links a:hover {
+    color: rgb(212, 216, 226);
+}
+
+footer .links a:visited:nth-of-type(even) {
+    color: rgb(18, 185, 236);
+}
+
+footer .links a:visited:nth-of-type(odd) {
+    color: rgba(13, 137, 238, 0.8);
+}
+
+footer .links a:visited:hover {
+    color: rgba(212, 216, 226, 0.7);
+}
+
+@media only screen and (max-width: 600px) {
+    footer {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer .company,
+    footer .certificates,
+    footer .contacts {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    footer .links a {
+        margin-left: 2rem;
+        text-align: left;
+    }
+}

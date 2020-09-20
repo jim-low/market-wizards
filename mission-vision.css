@@ -1,0 +1,48 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0%;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+h1 {
+    font-size: 4rem;
+    text-align: center;
+    color: white;
+    margin-bottom: 8rem;
+    animation: fadeIn 1s linear;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+.mission {
+    text-align: center;
+    animation: fadeIn 1.5s linear;
+    position: relative;
+    color: white;
+    margin: 2rem;
+}
+
+.vision {
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    position: relative;
+    animation: fadeIn 3.5s linear;
+    color: white;
+    margin: 2rem;
+}
+
+p {
+    text-align: center;
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 1.5rem;
+    color: white;
+}

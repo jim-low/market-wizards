@@ -1,0 +1,495 @@
+#about {
+    width: 100%;
+    height: 30%;
+    background-color: rgba(221, 160, 221, 0.3);
+}
+
+h1 {
+    text-transform: capitalize; 
+    text-align: center;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 4rem;
+}
+
+h1 span {
+    border-bottom: 3px solid white;
+}
+
+.intro {
+    font-size: 2rem;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.link-btn {
+    display: block;
+    margin: 1rem auto;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 1.75rem;
+    border: thick solid rgb(0, 204, 255);
+    background-color: #2184ac;
+    color: rgba(255, 255, 255, 0.9);
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.link-btn:hover {
+    border-color: rgb(0, 238, 255);
+    background-color: #26beb2;
+    transition: .25s;
+}
+
+.link-btn:active {
+    transform: scale(.9);
+    transition: 0s;
+}
+
+#slider {
+    margin-top: 15%;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: relative;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    height: 30rem;
+}
+
+.preview-img {
+    margin: 0 auto;
+    width: 50%;
+    height: 27rem;
+    z-index: 3;
+    animation: fadeIn 2s linear infinite;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.float-text {
+    position: absolute;
+    color: rgb(92, 87, 87);
+    font-size: 10rem;
+    text-transform: uppercase;
+    top: 23%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    text-shadow: -5px -2px white;
+}
+
+.bottom {
+    height: 10rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.bottom .img-bg {
+    background-color: rgba(28, 68, 245, 0.3);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 95%;
+    height: 9rem;
+}
+
+.bottom img {
+    width: 15%;
+    height: auto;
+    cursor: pointer;
+    height: 7.5rem;
+}
+
+.bottom img:hover {
+    width: 15%;
+    height: auto;
+    transform: scale(1.05);
+    transition: .2s linear;
+}
+
+.bottom img.show {
+    opacity: 1;
+    box-shadow: 0 0 5px 0px white;
+}
+
+.top img,
+.bottom img {
+    opacity: .8;
+}
+
+#course-brief {
+    width: 88%;
+    height: auto;
+    background: transparent;
+    margin: 15% auto;
+    border-radius: 15px;
+    box-shadow: inset 0px 0px 20px 20px rgba(255, 255, 255, 0.7);
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.course-video {
+    width: 40%;
+    height: auto;   
+}
+
+.course-video video {
+    width: 100%;
+    outline: none;
+    box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.7);
+}
+
+.row:nth-of-type(even) {
+    flex-direction: row;
+}
+
+.row:nth-of-type(odd) {
+    flex-direction: row-reverse;
+}
+
+.course-desc {
+   width: 40%;
+   height: 30rem;
+}
+
+.course-desc h3 {
+    font-size: 3rem;
+    text-transform: capitalize;
+    color: white;
+}
+
+.course-desc span {
+    border-bottom: 5px solid white;
+}
+
+.course-desc p {
+    font-size: 2rem;
+    color: white;
+}
+
+#membership {
+    width: 70%;
+    margin: 15% auto;
+    background: transparent;
+    border-radius: 20px;
+    height: 35em;
+    box-shadow: inset 0px 0px 10px 15px rgba(255, 255, 255, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: white;
+}
+
+#membership h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.75rem;
+    letter-spacing: 3px;
+}
+
+#membership span {
+    border-bottom: 3px solid white;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.card {
+    text-transform: capitalize;
+    background-color: rgba(226, 23, 23, 0.8);
+    text-align: center;
+    width: 27%;
+    height: 80%;
+    border-radius: 15px;
+    margin: 0 3%;
+    box-shadow: 0 0 10px 5px #cecbcb;
+}
+
+.card:hover {
+    transform: scale(1.25);
+    transition: .5s;
+}
+
+.card h4 {
+    font-size: 1.5rem;
+    margin-top: 15px;
+}
+
+.card p {
+    font-size: 1.25rem;
+}
+
+#store {
+    background-color: rgba(221, 160, 221, 0.3);
+    width: 100%;
+    height: 25em;
+    color: white;
+    margin: 15% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#store h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    margin: 2% 0;
+}
+
+#store p {
+    font-size: 2rem;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    #about {
+        margin-top: 7rem;
+    }
+
+    h1 {
+        font-size: 2.75rem;
+    }
+
+    .intro {
+        width: 90%;
+        font-size: 1.75rem;
+    }
+
+    .link-btn {
+        padding: .25em;
+        font-size: 1.25rem;
+    }
+
+    .preview-img {
+        width: 95%;
+    }
+
+    .float-text {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 6rem;
+    }
+
+    .bottom {
+        display: none;
+    }
+
+    #course-brief {
+        width: 100%;
+    }
+
+    .row:nth-of-type(even) .course-video {
+        position: relative;
+        left: 2.75%;
+    }
+
+    .row:nth-of-type(odd) .course-video {
+        position: relative;
+        right: 2.75%;
+    }
+
+    .course-desc {
+        width: 45%;
+    }
+
+    .course-desc h3,
+    .course-desc p {
+        position: relative;
+        top: 15%;
+    }
+
+    .course-desc h3 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .course-desc p {
+        font-size: 1.5rem;
+    }
+
+    .row:nth-of-type(odd) p {
+        left: 5%;
+    }
+
+    #membership {
+        width: 100%;
+    }
+
+    .card {
+        width: 30%;
+        height: 85%;
+    }
+
+    #store {
+        height: 20em;
+    }
+
+    #store h2 {
+        font-size: 2.5rem;
+    }
+
+    #store p {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    h1 {
+        font-size: 2.25rem;
+        width: 60%;
+        margin: 2.5% auto;
+        text-align: left;
+    }
+
+    .intro {
+        font-size: 1rem;
+        width: 70%;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    .link-btn {
+        font-size: 1rem;
+        margin: .5rem auto;
+    }
+
+    .preview-img {
+        display: none;
+    }
+
+    .float-text {
+        font-size: 3rem;
+        animation: fadeIn 2s linear infinite;
+    }
+
+    .row {
+        justify-content: center;
+    }
+
+    #course-brief {
+        padding-bottom: 4rem;
+    }
+    
+    #course-brief .row {
+        flex-direction: column-reverse;
+    }
+
+    .course-video,
+    .course-desc {
+        width: 70%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .row:nth-of-type(even) .course-video,
+    .row:nth-of-type(odd) .course-video {
+        position: static;
+    }
+
+    .row:nth-of-type(odd) p {
+        left: 0;
+    }
+
+    .course-desc h3 {
+        margin-bottom: 1rem;
+    }
+
+    .course-desc h3,
+    .course-desc p {
+        position: initial;
+        text-align: center;
+    }
+
+    #membership h3 {
+        font-size: 2.5rem;
+    }
+
+    .cards {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 80%;
+        height: 80%;
+        margin: 0 auto;
+    }
+
+    .member-card {
+        margin-top: 10%;
+    }
+
+    .card {
+        width: 100%;
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .card h4,
+    .card p {
+        margin: 0;
+    }
+
+    .card:hover {
+        transform: none;
+        transition: .5s;
+    }
+
+    .card p {
+        display: block;
+        width: 60%;
+        margin: 0 auto;
+        text-align: left;
+        font-size: 1rem;
+    }
+
+    .card p:first-of-type {
+        margin-top: 5px;
+    }
+
+    #store {
+        height: 18rem;
+    }
+
+    #store h2 {
+        font-size: 2.25rem;
+    }
+
+    #store p {
+        width: 60%;
+        margin: 0 auto;
+        text-align: left;
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+}

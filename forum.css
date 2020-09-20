@@ -1,0 +1,149 @@
+body {
+  text-align: center;
+}
+
+footer {
+  text-align: left;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 1% auto;
+  color: white;
+}
+
+.comment-section {
+  height: auto;
+  width: 80%;
+  margin: 0 auto 8rem auto;
+  border: 2.5px solid black;
+  min-height: 90vh;
+  position: relative;
+}
+
+.comment-box {
+  height: 70vh;
+  width: 80%;
+  background-color: white;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  background: rgba(55, 187, 248, 0.4);
+  margin-top: 5%;
+  display: none;
+}
+
+.comment {
+  width: 70%;
+  height: 7.5rem;
+  margin: 0 auto;
+  border: thin solid black;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: space-evenly;
+}
+
+.question {
+  width: 100%;
+  height: auto;
+}
+
+.question .user {
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  text-align: left;
+  margin: 0;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.question .user span {
+  border-bottom: 2px solid black;
+}
+
+.question-post {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3.5%;
+}
+
+.question-post .ques {
+  margin-left: 5%;
+}
+
+.question-post button {
+  margin-right: 2.5%;
+  font-size: 1rem;
+  outline: none;
+}
+
+.answer {
+  position: absolute;
+  background-color: rgba(129, 129, 129, 0.75);
+  width: 40%;
+  height: 7rem;
+  top: 100%;
+  right: -7.5%;
+  overflow: auto;
+  z-index: 10;
+  display: none;
+}
+
+.ans-empty {
+  display: none;
+}
+
+.reply-section{
+  width: 95%;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+.reply {
+  border-bottom: 2.5px dashed #e7dbdb;
+  margin-top: 2.5px;
+  padding-bottom: 2.5px;
+}
+
+.reply p {
+  margin: 0;
+  text-align: left;
+  margin-top: 5%;
+  border: thin solid white;
+}
+
+.reply .user-name {
+  text-transform: capitalize;
+}
+
+.comment-input-section {
+  margin: 2.5% auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.comment-input {
+  width: 30%;
+  height: 3.5rem;
+  font-size: 1rem;
+  resize: none;
+  opacity: .8;
+}
+
+.comment-input-section button {
+  margin: auto 7.5px;
+  width: 5%;
+  padding: 2px;
+  text-transform: capitalize;
+  letter-spacing: 1.25px;
+  border-radius: 6.5px;
+  border: none;
+}
+
+input {
+  outline: none;
+}

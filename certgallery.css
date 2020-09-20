@@ -1,0 +1,119 @@
+#gallery-container img {
+    opacity: 0.8;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 5%;
+    font-size: 3rem;
+}
+
+#gallery-container {
+    margin: 1% auto;
+    width: 90%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 33.33%);
+    grid-gap: 1rem;
+    margin-bottom: 7.5%;
+}
+
+.cert {
+    position: relative;
+    height: auto;
+}
+
+.cert img {
+    width: 100%;
+    height: auto;
+}
+
+.cert .accreds {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cert .accreds > * {
+    font-family: serif;
+}
+
+.cert .accreds .cert-head,
+.cert .accreds .cert-creds {
+    position: relative;
+}
+
+.cert .accreds .cert-head {
+    top: 20%;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.cert .accreds .cert-creds {
+    display: inline-block;
+    top: 25%;
+    text-align: center;
+    font-size: 1.25rem;
+    width: 78%;
+    height: auto;
+    max-height: 45%;
+}
+
+.cert .accreds .cert-creds #student, .cert .accreds .cert-creds #course {
+    border-bottom: thin solid black;
+    font-style: italic;
+    font-weight: bolder;
+    font-family: serif;
+    text-transform: capitalize;
+}
+
+@media only screen and (max-width: 780px) {
+    h1 {
+        margin-top: 10%;
+    }
+
+    #gallery-container {
+        grid-template-columns: repeat(2, 50%);
+    }
+
+    #gallery-container .cert .accreds .cert-head {
+        font-size: 1.8rem;
+    }
+
+    #gallery-container .cert .accreds .cert-creds {
+        font-size: .9rem;
+    }
+}
+
+@media only screen and (max-width: 590px){
+    h1 {
+        margin-top: 10%;
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    h1 {
+        font-size: 2.25rem;
+        margin-top: 15%;
+    }
+
+    #gallery-container {
+        grid-template-columns: 100%;
+    }
+
+    #gallery-container .cert .accreds .cert-head {
+        font-size: 2rem;
+    }
+
+    #gallery-container .cert .accreds .cert-creds {
+        font-size: 1.125rem;
+    }
+}

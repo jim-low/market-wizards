@@ -1,0 +1,12 @@
+.chapter-content li{
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+}
+#facts-tips ol li {
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 1.25rem;
+}
+.intro li{
+    margin-bottom: 10px;
+}

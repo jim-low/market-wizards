@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="basicLayout.css">
+    <script src="basic.js" defer></script>
+    <link rel="stylesheet" href="footer.css">
+    <script src="footer.js" defer></script>
+    <link rel="stylesheet" href="membership.css">
+    <script src="membership.js" defer></script>
+    <title>Membership</title>
+</head>
+<body>
+    <header>
+        <nav id="nav-bar">
+          <img src="">
+          <button id="nav-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+          <ul class="big-screen">
+            <li class="drop-down">
+              <div class="drop-menu">
+                <a href="faq.html">faq</a>
+                <a href="forum.html">forum</a>
+              </div>
+              <a href="index.html">home</a>
+            </li>
+            <li class="drop-down">
+              <div class="drop-menu">
+                <a href="history.html">history</a>
+                <a href="developers.html">the team</a>
+                <a href="mission-vision.html">mission and vision</a>
+              </div>
+              <a href="about.html">about</a>
+            </li>
+            <li><a href="courses.html">courses</a></li>
+            <li><a href="#" class="active">membership</a></li>
+            <li><a href="store.html">store</a></li>
+          </ul>
+          <ul class="small-screen">
+            <li><a href="index.html">home</a></li>
+            <li><a href="faq.html">faq</a></li>
+            <li><a href="forum.html">forum</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="history.html">history</a></li>
+            <li><a href="developers.html">the team</a></li>
+            <li><a href="mission-vision.html">mission and vision</a></li>
+            <li><a href="courses.html">courses</a></li>
+            <li><a href="#" class="active">membership</a></li>
+            <li><a href="store.html">store</a></li>
+          </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <div id="compare">
+            <table>
+                <caption><h1>Membership</h1></caption>
+                <thead>
+                    <tr>
+                    <td></td>
+                    <td>Normal</td>
+                    <td>Membership</td>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Price</td>
+                        <td>Free</td>
+                        <td>RM10.00 (monthly subscription) </td>
+                    </tr>
+                    <tr>
+                        <td>Courses</td>
+                        <td>5 courses</td>
+                        <td>5 courses + 3 premium courses</td>
+                    </tr>
+
+                    <tr>
+                        <td>Certificates</td>
+                        <td class="cross"> &#10060; </td>
+                        <td class="tick"> &#10004;</td>
+                    </tr>
+
+                    <tr>
+                        <td>Internship</td>
+                        <td class="cross"> &#10060; </td>
+                        <td class="tick"> &#10004;</td>
+                    </tr>
+
+                    <tr>
+                        <td>Discount</td>
+                        <td class="cross"> &#10060; </td>
+                        <td class="tick"> &#10004;</td>
+                    </tr>
+
+                    <tr>
+                        <td>Privilege</td>
+                        <td>Low</td>
+                        <td>High</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="member-form" name="myForm" >
+            <h1 class="mem_form"><span>Membership Form</span></h1>
+            <div id="form">
+                <div class="inputs" >
+                    <div class="type-input">
+                        <label for="type">Type/Version: </label>
+                        <input type="radio" id="trial" name="type" value="trial">
+                        <label for="trial">Trial</label>
+                        <input type="radio" id="official" name="type" value="official" checked>
+                        <label for="official">Official</label><br/>
+                    </div>
+                    <div class="name-input">
+                        <label for="uname">Name: </label>
+                        <input id="uname"  class="uname" placeholder="Alias" type="text"><br/>
+                    </div>
+                    <div class="email-input">
+                        <label for="email">E-mail: </label>
+                        <input id="email" class="email"  placeholder="Email" type="text" inputmode="email"><br/>
+                    </div>
+                    <div class="address-input">
+                        <label for="address">Address: </label>
+                        <textarea id="add" class="address" rows="3" cols="20" placeholder="Address"></textarea><br/>
+                    </div>
+                    <div class="occupation-input">
+                        <label for="occupation">Occupation: </label>
+                        <select id="occupation" class="occupation">
+                            <option value="student">Student</option>
+                            <option value="unemployed">Unemployed</option>
+                            <option value="intern">Intern</option>
+                            <option value="junior">Junior</option>
+                            <option value="senior">Senior</option>
+                        </select><br/><br/>
+                    </div>
+                </div>
+                <div class="form-btns">
+                    <button type="button" class="submit">Submit</button>
+                    <input type="reset" value="Clear" class="reset">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer></footer>
+</body>
+</html>

@@ -1,0 +1,170 @@
+body {
+    color: white;
+}
+
+#heading {
+    width: 100%;
+    height: 30vh;
+    z-index: 2;
+    border-bottom: 2px solid grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#heading img {
+    width: 100%;
+    z-index: -5;
+    position: absolute;
+    height: 100%;
+    opacity: .8;
+}
+
+#heading h1 {
+    text-transform: capitalize;
+    color: white;
+}
+
+#course-content {
+    width: 60%;
+    border: 2px solid white;
+    display: block;
+    height: 700px;
+}
+
+.chapter-selection {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 2.5px solid white;
+}
+
+.chapter-selection > div {
+    border: thin solid white;
+    cursor: pointer;
+    width: 33.33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chapter-selection > div:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.chapter-selection > div.active { 
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.chapter-selection span {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+
+.chapter-content {
+    height: 80%;
+}
+
+.chapter-content .intro,
+.chapter-content .chapter {
+    width: 95%;
+    margin: 0 auto;
+    position: relative;
+    height: 34.9rem;
+    overflow: auto;
+}
+
+.chapter-content h2 {
+    text-transform: capitalize;
+    font-size: 2rem;
+}
+
+.chapter-content p {
+    font-size: 1.25rem;
+}
+
+#course-content .chapter-content .chapter {
+    display: none;
+}
+
+#facts-tips {
+    width: 30%;
+    position: absolute;
+    left: 65%;
+    top: 50%;
+    text-align: center;
+    height: 27rem;
+    overflow: auto;
+}
+
+#facts-tips span {
+    text-transform: capitalize;
+    font-size: 2rem;
+    border-bottom: 2px solid white;
+}
+
+#facts-tips p,
+#facts-tips ul,
+#facts-tips ul li {
+    width: 90%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#facts-tips ul {
+    margin: 0;
+}
+
+.chapter-content .chapter button {
+    position: relative;
+    top: 85%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: none;
+    background: none;
+    outline: none;
+    border: 2.5px solid #E326EF;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    background: linear-gradient(315deg, rgba(121,9,96,1) 0%, rgba(22,137,196,1) 50%, rgba(121,9,96,1) 100%);
+    color: white;
+    padding: .5em 1em;
+}
+
+.chapter-content .chapter button:hover {
+    border: 2.5px solid #de63e7;
+    background: linear-gradient(315deg, rgb(119, 53, 105) 0%, rgb(27, 161, 228) 50%, rgb(119, 53, 105) 100%);
+}
+
+.chapter-content .chapter button:active {
+    transform: translateX(-50%) scale(.9);
+}
+
+@media only screen and (max-width: 690px){
+    #heading img {
+        display: none;
+    }
+
+    #heading h1 {
+        margin-top: 5rem;
+        color: rgba(255, 255, 255, 0.747);
+        text-shadow: -2px 2px rgb(36, 35, 35);
+    }
+
+    #course-content, #facts-tips {
+        width: 100%;
+    }
+
+    #facts-tips {
+        position: static;
+        text-align: left;
+        height: 22.5rem;
+        overflow: auto;
+    }
+
+    #facts-tips h3 {
+        margin-left: 5px;
+    }
+}
