@@ -71,3 +71,4 @@ for(let i = 0; i < AMT_OF_MEMBERS; i++){
     currentCard.style.cssText = "top: " + percentage + "%;"
     percentage += 9;
 }
+
